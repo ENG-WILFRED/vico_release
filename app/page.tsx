@@ -456,6 +456,9 @@ export default function Home() {
           <p style={{ color: "#64a078", maxWidth: "520px", margin: "0 auto 36px" }} className="text-base sm:text-lg">
             Join thousands of players, coaches, and organizations using VICO to manage their tennis community.
           </p>
+          <p style={{ color: "#00e87a", fontSize: "14px", fontWeight: 600, marginBottom: "20px" }}>
+            Subscribing is free — No spam, no commitments.
+          </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center sm:items-stretch">
             <SubscribeModal />
 
