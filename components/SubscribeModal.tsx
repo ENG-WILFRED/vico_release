@@ -5,7 +5,7 @@ import { NewsletterForm } from "./NewsletterForm";
 import { useSubscribe } from "./SubscribeContext";
 
 export function SubscribeModal() {
-  const { isOpen, closeModal } = useSubscribe();
+  const { isOpen, openModal, closeModal } = useSubscribe();
   const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export function SubscribeModal() {
     <>
       {/* Trigger Button */}
       <button
-        onClick={() => closeModal()}
+        onClick={() => openModal()}
         style={{
           background: "#00e87a",
           color: "#040a06",
