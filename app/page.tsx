@@ -476,8 +476,8 @@ export default function Home() {
         className="w-full py-12 sm:py-16"
       >
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
-            <div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-10">
+            <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xl">🎾</span>
                 <span
@@ -552,12 +552,8 @@ export default function Home() {
             style={{
               borderTop: "1px solid #005028",
               paddingTop: "24px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
-              gap: "12px",
             }}
+            className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-6 sm:gap-4 text-center"
           >
             <span
               style={{
@@ -576,6 +572,7 @@ export default function Home() {
                 fontSize: "10px",
                 letterSpacing: "2px",
               }}
+              className="order-3 sm:order-2 w-full sm:w-auto"
             >
               © 2026 VICO. All rights reserved. Launching April 17, 2026.
             </span>
@@ -586,6 +583,7 @@ export default function Home() {
                 letterSpacing: "4px",
                 fontSize: "14px",
               }}
+              className="order-2 sm:order-3"
             >
               17 · 04 · 2026
             </span>
